@@ -1,21 +1,21 @@
 <?php
 namespace ZMVC\Exceptions;
 
-require_once(__DIR__.'/../Core/CustomException.Class.php');
+require_once(__DIR__ . '/../Core/CustomException.Class.php');
 
 use \ZMVC\Core\CustomException as CustomException;
 
 /*
  * 
- * AlreadyExistingException Class
+ * NotExistingException Class
  * 
  */
-class AlreadyExistingException extends CustomException{
+class NotExistingException extends CustomException{
 	
 	// constructor
 	
 	public function __construct($paramName, $code = 0, Exception $previous = null){
-		$message = $paramName." : Attribut Already Existing";	
+		$message = $paramName." : Attribut Not Existing";	
 		parent::__construct($message, $code, $previous);
 	}
 	

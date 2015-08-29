@@ -1,7 +1,7 @@
 <?php
 namespace ZMVC\Exceptions;
 
-require_once(__DIR__.'/../Core/CustomException.Class.php');
+require_once(__DIR__ . '/../Core/CustomException.Class.php');
 
 use \ZMVC\Core\CustomException as CustomException;
 
